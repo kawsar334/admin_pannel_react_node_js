@@ -1,0 +1,131 @@
+@import "../../styles/variable.scss";
+@import "../../styles/global.scss";
+
+.footer {
+    background-color: $softBg;
+    height: max-content;
+
+    .footertop {
+        width: 100%;
+        height: max-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        border-bottom: 1px solid lightgray;
+        padding: 10px 20px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        background-color: #000000;
+
+        @include mobile {
+            justify-content: flex-start;
+            gap: 0px;
+        }
+
+        .playstore,
+        .applestore {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            cursor: pointer;
+
+            img {
+                border: 1px solid lightgray;
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+                border-radius: 20px;
+                padding: 10px;
+                background-color: black;
+
+            }
+
+            p {
+                color: lightgray;
+                font-size: 25px;
+                transition: all 1s ease;
+
+                &:hover {
+                    color: rebeccapurple;
+                }
+            }
+        }
+
+        .aboutus {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 20px;
+            
+            a {
+                font-size: 25px;
+                color: white;
+                transition: all 1s ease;
+                border-bottom: 1px solid lightgray;
+
+                &:hover {
+                    color: rebeccapurple;
+                }
+
+            }
+
+        }
+    }
+
+    .footerbottom{
+       
+        width: 95%;
+        height: max-content;
+        margin: 10px auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 40px;
+        flex-wrap: wrap;
+
+        .footeritem{
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            // background-color: red;
+            align-items: flex-start;
+            gap: 10px;
+            padding: 10px;
+            @include mobile{
+                width: 40%;
+            }
+            h2{
+                font-size: 14px;
+                color: whitesmoke;
+                width: 80%;
+                text-align: left;
+                text-transform: capitalize;
+            }
+            ul{
+                list-style: none;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                padding: 0;
+                gap: 5px;
+
+                li{
+                    a{
+                        color: grayscale($color: #000000);
+                        font-size:15px;
+                        text-transform: capitalize;
+                        transition: all 1s ease;
+                        &:hover{
+                            color: white;
+                        }
+
+                    }
+                }
+            }
+
+        }
+    }
+}

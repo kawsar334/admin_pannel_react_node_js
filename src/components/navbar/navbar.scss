@@ -1,0 +1,72 @@
+@import "../../styles/variable.scss";
+@import "../../styles//global.scss";
+
+.navbar {
+
+    background-color: $mainBg;
+    height: 60px;
+    z-index: 111;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+
+    .fa-bars {
+        font-size: 30px;
+        cursor: pointer;
+        opacity: 0;
+
+        @include mobile {
+            opacity: 1;
+        }
+    }
+
+    .fa-xmark {
+        font-size: 30px;
+        cursor: pointer;
+        color: crimson;
+        opacity: 0;
+
+        @include mobile {
+            opacity: 1;
+        }
+    }
+
+    .searchbar {
+        input {
+
+            width: 400px;
+            padding: 5px 10px;
+            background-color: transparent;
+            border: 1px solid lightgray;
+            color: white;
+            border-radius: 25px;
+
+            @include mobile {
+                display: none;
+            }
+        }
+
+    }
+
+    .navright {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        a {
+            cursor: pointer;
+            text-transform: capitalize;
+
+            img {
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                border: 1px solid white;
+                cursor: pointer;
+            }
+        }
+    }
+}

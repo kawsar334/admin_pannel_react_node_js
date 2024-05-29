@@ -1,0 +1,52 @@
+@import "../../styles//global.scss";
+@import "../../styles/variable.scss";
+
+
+.userr{
+    width: 100%;
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+
+    .userrwrapper {
+        width: 400px;
+        height: max-content;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+        
+
+        .cart {
+            box-shadow: 0 0 0 white;
+            width: 100%;
+
+            .userImg {
+                width: 100%;
+                height: 300px;
+                border-radius: 20px;
+                object-fit: cover;
+            }
+
+            .userdetails {
+
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 5px;
+                button{
+                    all: unset;
+                    border: 1px solid lightgray;
+                    padding: 5px 20px;
+                    background-color: blue;
+                    color: white;
+                    cursor: pointer;
+                    border-radius: 10px;
+
+                }
+            }
+        }
+    }
+}

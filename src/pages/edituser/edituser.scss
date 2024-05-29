@@ -1,0 +1,108 @@
+@import "../../styles/global.scss";
+
+
+
+.edituser {
+    width: 100%;
+
+    .edituserwrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-top: 40px;
+
+        @include mobile {
+            flex-direction: column;
+        }
+
+        .edituserleft {
+            .cart {
+                width: 250px;
+                height: 300px;
+                border: 1px solid lightgray;
+                padding: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                background-color: whitesmoke;
+
+                .carttop {
+                    border-bottom: 1px solid lightgray;
+
+                    img {
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                        margin-bottom: 10px;
+
+                    }
+                }
+
+                .cartbottom {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 5px;
+                    margin-top: 20px;
+
+                    span {
+                        font-size: 15px;
+                        text-transform: capitalize;
+                    }
+
+                    .socialicons {
+                        margin-top: 20px;
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+
+                        a {
+                            i {
+                                font-size: 20px;
+                                color: rebeccapurple;
+                            }
+                        }
+                    }
+
+                }
+            }
+
+        }
+
+        .edituserright {
+            width: 300px;
+
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .formitem {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+
+                    input {
+                        padding: 5px 10px;
+                        border-radius: 10px;
+                        border: none;
+                        border: 1px solid lightgray;
+
+                    }
+
+                    select {
+                        padding: 5px 10px;
+                        text-transform: capitalize;
+                    }
+
+                }
+            }
+        }
+    }
+}

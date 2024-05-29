@@ -1,0 +1,116 @@
+@import "../../styles/global.scss";
+
+
+.register {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+
+    .registerwrapper {
+        width: 50%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+
+        h1 {
+            text-transform: capitalize;
+            color: $mainBg;
+        }
+
+        @include mobile {
+            width: 100%;
+            height: max-content;
+            box-shadow: none;
+
+        }
+
+        .form {
+            width: 100%;
+            background-color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            @include mobile {
+                flex-direction: column;
+                gap: 0px;
+            }
+
+            .formleft {
+                width: 50%;
+
+                @include mobile {
+                    width: 80%;
+
+                }
+            }
+
+            .formright {
+                width: 50%;
+
+                @include mobile {
+                    width: 80%;
+
+                }
+
+                p {
+                    font-size: 15px;
+
+                    a {
+                        font-size: 20px;
+                        cursor: pointer;
+                        color: blue;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .registeritem {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                margin: 15px 0px;
+
+                @include mobile {
+                    margin: 10px 0px;
+                }
+
+                input {
+                    padding: 5px 10px;
+                    border-radius: 10px;
+                    border: none;
+                    border: 1px solid lightgray;
+                }
+
+                button {
+                    padding: 5px 10px;
+                    border-radius: 10px;
+                    border: none;
+                    border: 1px solid lightgray;
+                    cursor: pointer;
+                    background-color: $mainBg;
+                    color: white;
+                }
+
+                select {
+                    padding: 5px 10px;
+                    border-radius: 10px;
+                    border: none;
+                    border: 1px solid lightgray;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+
+}

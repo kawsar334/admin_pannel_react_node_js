@@ -1,0 +1,60 @@
+.chat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+
+    .chatcontainer {
+        border: 1px solid lightgray;
+        background-color: white;
+        height: 60%;
+        width: 50%;
+        box-sizing: border-box;
+
+        .header {
+            background-color: crimson;
+            height: 15%;
+            color: white;
+
+        }
+
+        .chatbox {
+            height: 70%;
+            background-color: transparent;
+        }
+
+        .inputbox {
+            height: 15%;
+            color: white;
+            box-sizing: border-box;
+            display: flex;
+            border: 1px solid crimson;
+
+            input {
+                box-sizing: border-box;
+                height: 100%;
+                width: 90%;
+                border: none;
+                outline: none;
+                padding-left: 10px;
+            }
+
+            .sendbtn {
+                width: 10%;
+                border: none;
+                outline: none;
+                // border: 1px solid crimson;
+                border-left: none;
+                font-size: 20px;
+                font-weight: 500;
+                color: white;
+                text-transform: capitalize;
+                background-color: crimson;
+                cursor: pointer;
+            }
+        }
+
+    }
+}

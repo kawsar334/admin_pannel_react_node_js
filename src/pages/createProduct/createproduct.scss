@@ -1,0 +1,105 @@
+
+
+@import "../../styles/global.scss";
+
+
+.addproduct{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+
+    .addproductwrapper{
+        width: 60%;
+        height: auto;
+        background-color: white;
+        @include mobile{
+            width: 100%;
+        }
+
+        .uploadimgscontainer{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            img{
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+            }
+        }
+        .addproductform{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100%;
+            gap: 10px;
+            padding: 20px ;
+            .formleft{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+            }
+            .formright{
+                display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    // width: 100%;
+                    .formitem{
+                        select{
+                            option{
+                                padding: 5px;
+                                border-bottom: 1px solid lightgray;
+
+                            }
+                        }
+                    }
+            }
+
+            .formitem{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                @include mobile{
+                    flex-direction: row;
+                    position: relative;
+
+                }
+                input{
+                    padding: 5px 10px;
+                    border-radius: 10px;
+                    border: none;
+                    border: 1px solid lightgray;
+                    
+                }
+              label{
+               color: gray;
+               text-transform: capitalize;
+              }
+              button{
+                all:unset;
+                border: 1px solid lightgray;
+                padding: 5px 10px;
+                background-color:black;
+                border-radius: 10px;
+                color: white;
+                cursor: pointer;
+                @include mobile{
+                    align-self: center;
+                    display: block !important;
+                    position: absolute;
+                    left: 50px;
+                    top: 20px;
+                }
+
+              }
+                
+            }
+        }
+    }
+}

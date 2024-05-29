@@ -1,0 +1,50 @@
+@import "../../styles/global.scss";
+
+
+.user {
+    padding: 10px;
+    width: 100%;
+    height: max-content;
+    .userstop {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 20px;
+        h1 {
+            text-align: center;
+            font-weight: 600;
+            font-size: 20px;
+            text-transform: capitalize;
+            cursor: pointer;
+        }
+
+        a {
+            background-color: teal;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 10px;
+            border: 1px solid lightgray;
+            transition: 0.5s ease all;
+            &:hover {
+                background-color: transparent;
+                color: teal;
+            }
+        }
+    }
+
+    .usercontainer {
+        padding: 10px;
+        width: 100%;
+        height: max-content;
+        @include mobile {
+            overflow-x: auto;
+        }
+
+        .listimg {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 1px solid lightgray;
+        }
+    }
+}

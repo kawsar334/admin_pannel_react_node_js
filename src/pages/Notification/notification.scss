@@ -1,0 +1,33 @@
+
+
+
+.notificationcontainer{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0px;
+    background-color: white;
+    button{
+        align-self: center;
+        border: none;
+        border: 1px solid lightblue;
+        padding: 5px 10px ;
+        margin: 10px;
+        border-radius: 20px;
+    }
+    .notification{
+        border-bottom: 1px solid lightgray;
+        background-color: white;
+        color: black;
+        padding: 5px 0px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3) ;
+        color: black;
+        width: max-content;
+        margin: 5px 0px;
+        padding: 5px;
+        border-radius: 20px;
+        
+    }
+}

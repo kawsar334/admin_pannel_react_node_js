@@ -1,0 +1,54 @@
+
+
+@import "./variable.scss";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+      // font-family: 'Dancing Script', cursive;
+      
+        font-family: 'Roboto', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+
+}
+
+
+input{
+  outline: none;
+}
+$mainwidth:778px;
+
+
+
+@mixin mobile {
+  @media (max-width:#{$mainwidth}) {
+    @content
+    
+  }
+
+}
+
+
+
+.main{
+  background-color: white;
+  width: 100%;
+  font-family:  "Inter";
+  .container{
+    display: flex;
+    gap: 10px;
+  }
+  .contentcontainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    @include mobile{
+      flex-direction: column;
+    }
+  }
+}
